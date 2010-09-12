@@ -4,6 +4,10 @@
               (list (propertize "%12b" 'face
                                 (list :weight 'bold :foreground "#f0dfaf"))))
 
+;; (defface hl-line '((t (:background "#333333")))
+;;   :group 'hl-line)
+;; (setq hl-line-face 'hl-line)
+
 (defun color-theme-thunk1 ()
   (interactive)
   (color-theme-install
@@ -11,7 +15,8 @@
      ((background-color              . "Grey15")
       (background-mode               . dark)
       (border-color                  . "Black")
-      (cursor-color                  . "Grey")
+      (cursor-color                  . "medium slate blue")
+      ;; (cursor-color                  . "Grey")
       (foreground-color              . "Grey")
       (mouse-color                   . "Grey"))
      ((display-time-mail-face        . mode-line)
@@ -27,6 +32,7 @@
                                                    :box nil :strike-through nil :overline nil :underline nil
                                                    :slant normal :weight normal :height 87 :width semi-condensed :family "misc-fixed"))))
 
+     (hl-line-face                   ((t (:background "#333333"))))
      (Info-title-1-face              ((t (:bold t :weight bold :family "helv" :height 1.728))))
      (Info-title-2-face              ((t (:bold t :family "helv" :weight bold :height 1.44))))
      (Info-title-3-face              ((t (:bold t :weight bold :family "helv" :height 1.2))))
@@ -45,6 +51,13 @@
      (comint-highlight-input         ((t (:bold t :weight bold))))
      (comint-highlight-prompt        ((t (:foreground "cyan"))))
      (cursor                         ((t (:background "Grey"))))
+
+     ;; The faces used are ido-first-match, ido-only-match and
+     ;; ido-subdir.
+
+     (ido-first-match                ((t (:foreground "light sky blue"))))
+     (ido-only-match                 ((t (:foreground "aquamarine"))))
+     (ido-subdir                     ((t (:foreground "light steel blue"))))
 
      (custom-button-face             ((t (:foreground "gainsboro"))))
      (custom-button-pressed-face     ((t (:background "lightgrey" :foreground "black" :box (:line-width 2 :style pressed-button)))))
