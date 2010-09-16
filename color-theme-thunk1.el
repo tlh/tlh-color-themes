@@ -157,7 +157,7 @@
      (secondary-selection            ((t (:background "steel blue"))))
      (semantic-dirty-token-face      ((t (:background "gray10"))))
      (semantic-unmatched-syntax-face ((t (:underline "red"))))
-     (show-paren-match-face          ((t (:background "light slate blue" :foreground "white"))))
+     (show-paren-match-face          ((t (:background "dark slate blue" :foreground "white"))))
      (show-paren-mismatch-face       ((t (:background "red" :foreground "white"))))
      (trailing-whitespace            ((t (:background "light blue"))))
      (underline                      ((t (:underline t))))
